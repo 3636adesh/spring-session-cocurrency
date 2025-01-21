@@ -25,7 +25,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     public static final String USERNAME_2 = "mike@live.in";
 
     static {
-        users.put(USERNAME_1, new User(USERNAME_1, "password", "john", Collections.singleton("ROLE_ADMIN")));
-        users.put(USERNAME_2, new User(USERNAME_2, "password", "mike", Collections.singleton("ROLE_ADMIN")));
+        users.put(USERNAME_1, new User(USERNAME_1, "{noop}password", "john", Collections.singleton("ROLE_ADMIN")));
+        users.put(USERNAME_2, new User(USERNAME_2, "{noop}password", "mike", Collections.singleton("ROLE_ADMIN")));
     }
 }
